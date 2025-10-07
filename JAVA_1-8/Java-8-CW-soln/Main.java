@@ -18,6 +18,8 @@ class Main {
   
   void init(){
     // test your function
+    madlib("1", "1", "3" );
+    //areaOfSquare(2.0);
    
   }
 }

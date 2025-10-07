@@ -11,7 +11,7 @@ class Main {
     // Call the function honors()
 
    
-    // Call the function shortSize()
+    // Call the function shortsSize()
 
     
   }

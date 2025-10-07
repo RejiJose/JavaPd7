@@ -13,7 +13,7 @@ class Main {
     System.out.println( honors(3.64));
     System.out.println( honors(2.8));
    
-    // Call the function shortSize()
+    // Call the function shortsSize()
     System.out.println( shortsSize(34.5));
     System.out.println( shortsSize(40));
     
