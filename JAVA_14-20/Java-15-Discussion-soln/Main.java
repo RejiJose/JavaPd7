@@ -7,9 +7,9 @@ class Main {
 
   void init(){
 
-    //print(sumN(100));
+    print(sumN(100));
 
-    //print(sumPowersOf2(4));
+    print(sumPowersOf2(4));
 
     print(factorial(5));
 

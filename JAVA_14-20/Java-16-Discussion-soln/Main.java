@@ -41,27 +41,28 @@ class Main {
   int binaryToDecimal(String s){    
     int sum=0;
     
-  //  Method 1:
-    /* int exp=0;
-    for(int x=s.length()-1; x>=0; x--){
-      String digit = s.substring(x, x+1);
-      if(digit.equals("1")){
-        sum += Math.pow(2,exp);
-      }
-      exp++;
-    } */  // end of method 1
+    // Method 1:
+        int exp=s.length()-1;
+
+        for(int x=0; x<=s.length()-1; x++){
+          String digit = s.substring(x, x+1);
+          if(digit.equals("1")){
+            sum += Math.pow(2,exp);
+          }
+          exp--;
+        }  // end of method 1
+        
     
-  // Method 2:
-    int exp=s.length()-1;
-    for(int x=0; x<=s.length()-1; x++){
-      String digit = s.substring(x, x+1);
-      if(digit.equals("1")){
-        sum += Math.pow(2,exp);
-      }
-      exp--;
-    }  // end of method 2
-    
+    // Method 2:
+      /*  int exp=0;
+
+          for(int x=s.length()-1; x>=0; x--){
+            String digit = s.substring(x, x+1);
+            if(digit.equals("1")){
+              sum += Math.pow(2,exp);
+            }
+            exp++;
+          } */  // end of method 2
     return sum;
   }
-
 }
