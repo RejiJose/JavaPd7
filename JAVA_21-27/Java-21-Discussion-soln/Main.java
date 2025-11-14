@@ -10,9 +10,9 @@ class Main {
     // guessingGame1();
     
     // Game version 2
-    // 3: Include the "Do you want to play again?" loop
+    // 3: Include loop for user to play again
     char playAgain = 'y';
-    while( !(playAgain !='y') ){
+    while( playAgain == 'y') {
       guessingGame2();
       print("Enter \"y\" to play again..");
       playAgain = Input.readChar();        
@@ -28,7 +28,7 @@ class Main {
     int guess = Input.readInt();
     int tries = 1;
       
-    while( !(guess == num || tries >= 3) ){ // while(guess != num && tries < 3){
+    while(guess != num && tries < 3){  // while( !(guess == num || tries >= 3) ){
       print("Incorrect..try again..");
       guess = Input.readInt();
       tries++;
@@ -47,11 +47,11 @@ class Main {
   void guessingGame2(){
     int num = randInt(1,10);
     print("\n\nSecret Number: " + num);
-    int guess = -1;
+    int guess = 0;
     int tries = 0;
     
     // 1: add a limit of 3 guesses per game
-    while( !(guess == num || tries >= 3) ){
+    while( guess != num && tries < 3){
       print("Guess a number from 1 to 10");
       guess = Input.readInt();
       tries++;
