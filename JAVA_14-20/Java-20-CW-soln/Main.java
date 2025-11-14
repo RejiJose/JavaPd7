@@ -17,15 +17,15 @@ class Main {
   Write a function eggs() that returns the quantity of eggs she originally had.
 */
   int eggs(){
-    // Since we know the number of eggs is divisible by 7, we know 
-    // the answer is a multiple of 7
+    // Since we know the number of eggs is divisible by 7, we know the answer is a multiple of 7.
+    // We also know that when the answer is divided by 2 or 3 or 4 or 5 or 6, the remainder is 1.
     int numberOfEggs = 7; 
     while( !(numberOfEggs % 2 == 1 &&
              numberOfEggs % 3 == 1 &&
              numberOfEggs % 4 == 1 &&
              numberOfEggs % 5 == 1 &&
              numberOfEggs % 6 == 1) ){
-      numberOfEggs+=7;
+      numberOfEggs += 7;
     }
     return numberOfEggs;
   }

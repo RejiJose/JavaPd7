@@ -12,12 +12,12 @@ class Main {
 
   
   void init(){
-    print( "First value of x where x^2 is atleast 10000 is: " + powerOf2() );
+    // print( "First value of x where x^2 is atleast 10000 is: " + powerOf2() );
     
-    numOfDiceRolls();
+    // numOfDiceRolls();
     
-    print(isPrime(13));
-    print(isPrime(1001));
+    // print(isPrime(15));
+    // print(isPrime(1001));
 
     // Show all prime #s below 50
     for(int i=2; i<50; i++){
