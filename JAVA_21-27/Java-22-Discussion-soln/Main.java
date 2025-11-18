@@ -18,15 +18,15 @@ class Main {
     // Define (or create) an array with known values
     int[] nums = {2,3,4,5,6};
 
-    // // Accessing array elements
+    // Accessing array elements
      print(nums[0]); // 1st element
      print(nums[2]); // 3rd element
 
-    // // // Size of an array (number of elements in it). 
-    // // // Note: length is a variable, not a function (i.e., no parentheses )
+    // Size of an array (number of elements in it). 
+    // Note: length is a variable, not a function (i.e., no parentheses )
      print(nums.length);
     
-    // // // Last element of an array
+    // Last element of an array
      print(nums[ nums.length-1]);
 
     

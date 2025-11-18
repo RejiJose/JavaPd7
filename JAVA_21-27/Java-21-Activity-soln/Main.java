@@ -8,10 +8,10 @@ class Main {
   void printt(Object o){System.out.print(o);}
 
   void init(){
-    menu();
+    // menu();
 	// allowance1();
     // allowance2();
-    // addTwoNumbers();
+    addTwoNumbers();
     // printt( GCF(12,18) );
     // securityCode("ABCD");  
     
@@ -28,7 +28,7 @@ class Main {
     int pennyPlan = 1;
     while (pennyPlan < 500){
       print("Day " + day + ": " + pennyPlan);
-      pennyPlan*=2;
+      pennyPlan *= 2;
       day++;
     }
     print("Penny plan exceeds $5 in "+day+ " days. Value is: "+ pennyPlan);
