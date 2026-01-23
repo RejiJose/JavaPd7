@@ -23,10 +23,10 @@ class Main {
     Student[] studentList = new Student[5];
 
     // Demonstrate that the array slots are all null(empty)
-    /* for(int x=0; x<= studentList.length-1; x++){
-      Student student = studentList[x];
-      print(student);
-    } */
+    //  for(int x=0; x<= studentList.length-1; x++){
+    //   Student student = studentList[x];
+    //   print(student);
+    // } 
 
     // Create new student object and assign to each array item    
     studentList[0] = new Student("Tom",9,g1,courses1);

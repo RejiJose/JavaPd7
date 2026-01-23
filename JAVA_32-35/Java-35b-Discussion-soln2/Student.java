@@ -28,9 +28,9 @@ class Student{
     return false;
   }
   
-  boolean findCourseStartingWith(String course){
+  boolean findCourseStartingWith(String startChars){
     for(int x=0; x<this.courses.size(); x++){
-      if(courses.get(x).substring(0,course.length()).equalsIgnoreCase(course)){
+      if(courses.get(x).substring(0,startChars.length()).equalsIgnoreCase(startChars)){
         return true;
       }
     }
