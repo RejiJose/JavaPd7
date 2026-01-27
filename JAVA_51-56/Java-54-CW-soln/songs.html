@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="songs.js"></script>
+  </head>
+  
+  <body onload="init()">
+    <div>
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> Lesson 54 Classwork - Songs Page </h1>
+      </div>
+      
+      <div class='searchpanel'>
+          Search Panel
+          <input style="flex:2;text-align:right;" type="text" 
+            id="composer" placeholder="Enter Composer" >      
+          <a class="button" onclick="filter()"> Search </a><br>
+      </div>
+
+      <div class="container">
+        <!--  nav bar -->
+        <nav id='nav'>
+          <H2>NAV</H2><br> 
+          <div>
+            <a href="index.html" class="button">HOME</a> <br>
+            <a href="songs.html" class="button">SONGS</a>
+          </div>
+        </nav>
+        
+        <div id='mainpanel' class="container">
+          Main Panel
+        </div>
+      </div>
+
+      <div id='footer'>
+        <h3> Footer </h3>
+      </div>
+
+    </div>
+    
+  </body>
+</html>

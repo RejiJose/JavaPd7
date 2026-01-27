@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />    
+    <!-- Import jQuery library to make API calls -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Import the customers.js file -->
+    <script src="customers.js"></script>
+  </head>
+  
+  <!-- Call the init() function when website loads -->
+  <body onload="init()">
+    <div>
+      <!--  Header (Banner) -->
+      <div id="header">
+        <h1> Lesson 54 - Chinook DB info </h1>
+      </div>
+      <!--  nav bar -->
+      <nav id='nav'>
+        <h2>Navigation</h2>
+            <a href="index.html" class="button">CUSTOMERS</a>
+            <a href="employees.html" class="button">EMPLOYEES</a> 
+            <a href="songs.html" class="button">SONGS</a>
+      </nav>
+      
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="container filter"><div>          
+                   Left Panel
+              <h4> Search for Customer by Country </h4>
+              <input style="flex:2;text-align:right;" type="text" 
+                id="country" placeholder="Enter country" >        
+              <a class="button" onclick="filterByCountry()"> Search </a><br>
+              <h4 id="count"></h4>
+            </div>
+          </div>
+        </div>
+        
+        <div id='centerpanel' class='container'>
+          Center Panel
+        </div>
+        
+        <div class='panel'>
+          Right Panel
+        </div>
+        
+      </div>
+
+      <div id='footer'>
+        <h3> Footer </h3>
+      </div>
+
+    </div>
+    
+  </body>
+</html>

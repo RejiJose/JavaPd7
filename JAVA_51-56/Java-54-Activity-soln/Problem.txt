@@ -1,0 +1,7 @@
+You need to create a website with four different webpages:  A home, customers, employees and songs page, where you can filter for information in each page except for the home page.
+
+Your task is to replicate the pages. Use the images given for the layout of each page. There are 2 folders: "cities" and "countries" that contain flags for the associated countries.
+
+NOTE: You have already written most of the required code in previous class work (say, activity 50). So try to copy as much as you can and then modify the HTML, CSS and JS as needed.
+
+REMEMBER: Other than for the Home page, you will need a JavaScript file for each webpage and include the required script.
