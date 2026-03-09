@@ -21,16 +21,16 @@ class Main {
   void init() {
       // Review the database class and its constructor (how a DB object is instantiated)
     
-      // Discuss the jar file (libray of classes)
-      // Note: The database (say, cr101.db) must be one of the files within your Replit project.
+      // Discuss the jar file (library of classes)
+      // Note: The database (say, cr101.db) must be one of the files within your project.
 
       String sql =""; // variable to store the SQL query
-      String queryResult=""; // variable to store result of the query to the DB
+      String queryResult=""; // variable to store result of the query (from DB)
     
       // Instantiate(create) a Database object needed to connect with the DB
 		  Database db =  new Database("jdbc:sqlite:cr101.db");
     
-      // 1) Display all records for a student with ID Student1
+      // 1) Display all records for a student with ID Student51
       sql = "SELECT * FROM cr101 WHERE studentId='STUDENT51';";	
       queryResult = db.runSQL(sql,"table-auto");// 'table-auto' will adjust the table column widths automatically; table-10 means column width set to 10 characters
       print(queryResult);
