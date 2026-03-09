@@ -38,21 +38,21 @@ class Main {
 
     
       // 2) Display the first 5 records only
-      // sql = "select * from cr101 where studentId='STUDENT1' Limit 5;";	// Limit 5 means first 5 rows(records) only
-      // queryResult = db.runSQL(sql,"table-auto");
-      // print(queryResult);
-      // print("*************************");
+      sql = "select * from cr101 where studentId='STUDENT1' Limit 5;";	// Limit 5 means first 5 rows(records) only
+      queryResult = db.runSQL(sql,"table-auto");
+      print(queryResult);
+      print("*************************");
 
     
       // 3) Display records of Teacher, Course and Period in Room 108 for pds 2 and 3
-      // sql = "SELECT teacher1, course, period From cr101 Where room=108 and period in (2,3);";	
-      // queryResult = db.runSQL(sql,"table-auto");
-      // print(queryResult);
+      sql = "SELECT teacher1, course, period From cr101 Where room=108 and period in (2,3);";	
+      queryResult = db.runSQL(sql,"table-auto");
+      print(queryResult);
 
       // 4) Display only unique records of Teacher, Course and Period in Room 108 for pds 2 and 3
-      // sql = "SELECT DISTINCT teacher1, course, period From cr101 Where room=108 and period in (2,3);";	
-      // queryResult = db.runSQL(sql,"table-auto");
-      // print(queryResult);
+      sql = "SELECT DISTINCT teacher1, course, period From cr101 Where room=108 and period in (2,3);";	
+      queryResult = db.runSQL(sql,"table-auto");
+      print(queryResult);
     
   }// end init
   
