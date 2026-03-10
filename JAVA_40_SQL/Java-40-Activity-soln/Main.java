@@ -1,13 +1,15 @@
 import java.io.IOException;
 import java.sql.*;
-// To Compile on the Replit shell use: (same as for mac)
-// javac -cp sqlite-jdbc-3.23.1.jar: Main.java
+/*
+To Compile on the Replit shell use: (same as for mac)
+javac -cp sqlite-jdbc-3.23.1.jar: Main.java
 
-// To compile in Windows use:
-// javac -cp sqlite-jdbc-3.23.1.jar
+To compile in Windows use:
+javac -cp sqlite-jdbc-3.23.1.jar
 
-// To execute(run) use:
-// java -cp sqlite-jdbc-3.23.1.jar: Main
+To execute(run) use:
+java -cp sqlite-jdbc-3.23.1.jar: Main
+*/
 class Main {
 
  public static void main(String[] args)throws IOException{
@@ -34,36 +36,42 @@ class Main {
 
     // Challenge 1:  Create the database object and connect to the "students" database.  
     Database db =  new Database("jdbc:sqlite:students.db" );	
-
+    
+    print("Challenge 2:");
     // Challenge 2:  Retrieve and display all student records for whom "BANU" is a teacher. (Hint: use teacher1 and teacher2 field names)
     sql = " SELECT * FROM cr101 WHERE ";
     sql += " teacher1 = 'BANU' OR teacher2 = 'BANU'"; // BANU must be uppercase
 
     queryResult = db.runSQL(sql,"table-auto");
     print(queryResult); 
+    print("****************************************************************************************************");
 
+    print("Challenge 3:");
     // Challenge 3:  Retrieve and display all student records for whom "JOSEPH" is their period 2 teacher. (Hint: use teacher1 field name)
     sql += " teacher1 = 'JOSEPH' AND period = 2";
 
     queryResult = db.runSQL(sql,"table-auto");
-    print(queryResult); 
-
+    print(queryResult);
+    print("****************************************************************************************************");
     
+    print("Challenge 4:");    
     // Challenge 4:  Retrieve and display the ID for each student. How many students are there? (Hint: only unique values)
     sql = " SELECT DISTINCT studentID FROM cr101 ";
 
     queryResult = db.runSQL(sql,"table-auto");
     print(queryResult); 
-
+    print("****************************************************************************************************");
     
+    print("Challenge 5:");    
     // Challenge 5:  Retrieve and display the ID, grade, course, room and period for each student who is a junior and has a class in any of the following rooms: 106, 108, 322.
     sql = " SELECT studentID, grade, course, room, period FROM cr101 WHERE ";
     sql += " grade = 11 AND room IN(106, 108, 322)";
 
     queryResult = db.runSQL(sql,"table-auto");
     print(queryResult); 
-   
-
+    print("****************************************************************************************************");
+    
+    print("Challenge 6:");
     // Challenge 6:  Retrieve and display all records for all students taking an AP Math course. (HINT: Math courses start with an M and AP courses end with an X)
     sql += " course LIKE 'M%X'";
 
