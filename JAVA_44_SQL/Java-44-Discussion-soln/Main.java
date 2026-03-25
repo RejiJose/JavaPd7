@@ -1,5 +1,14 @@
 import java.io.IOException;
 import java.sql.*;
+// To Compile on the Replit shell use: (same as for mac)
+// javac -cp sqlite-jdbc-3.23.1.jar: Main.java
+
+// To compile in Windows use:
+// javac -cp sqlite-jdbc-3.23.1.jar
+
+// To execute(run) use:
+// java -cp sqlite-jdbc-3.23.1.jar: Main
+
 // SQL Inner Join syntax:
 /*
 SELECT column_name(s)
@@ -35,11 +44,11 @@ class Main {
       // print(result);
     
       //  Q1: How do you find all the Invoice IDs for customer 'Astrid Gruber' ?
-      // sql  = " Select invoices.invoiceid From invoices ";
-      // sql += " Inner Join customers On customers.customerid = invoices.customerid ";
-      // sql += " Where customers.firstname='Astrid' and customers.Lastname='Gruber' ";
-      // result = db.runSQL(sql,"table-auto");
-      // print(result);
+      sql  = " Select invoices.invoiceid From invoices ";
+      sql += " Inner Join customers On customers.customerid = invoices.customerid ";
+      sql += " Where customers.firstname='Astrid' and customers.Lastname='Gruber' ";
+      result = db.runSQL(sql,"table-auto");
+      print(result);
     
       // Q2: How do you find the album names for the artist 'Audioslave' ?
       // sql  = " Select albums.title From albums ";

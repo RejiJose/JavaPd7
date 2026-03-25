@@ -28,15 +28,15 @@ class Main {
 
       // a) First check that you are getting the correct records
 		// sql = "Select * from cr101 " +
-        // "WHERE studentID = 'STUDENT36' AND period = 2;";
+      //   "WHERE studentID = 'STUDENT36' AND period = 2;";
 
 		// queryResult = db.runSQL(sql,"table-auto");
 		// print(queryResult);
 
       // b) Update the record. (NOTE: you need to pass just the sql string when updating; No need of 'table-auto')
-	    // sql = "Update cr101 "  +
-            // "Set room = 322 "  +
-            // "Where studentID = 'STUDENT36' and period = 2;";
+	   //  sql = "Update cr101 "  +
+      //       "Set room = 322 "  +
+      //       "Where studentID = 'STUDENT36' and period = 2;";
 
 		// db.runSQL(sql);
 

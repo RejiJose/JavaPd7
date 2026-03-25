@@ -7,11 +7,16 @@ import java.sql.*;
 
 import java.net.InetSocketAddress;
 import java.util.Map;
+// To Compile in MacOS/Replit use:  javac -cp sqlite-jdbc-3.23.1.jar: Main.java
+// To compile in Windows use:       javac -cp sqlite-jdbc-3.23.1.jar
+// To execute(run) in Windows use:  java -cp sqlite-jdbc-3.23.1.jar: Main
+
 /*
-In order to communicate with the DB server from a browser tab, you will need to append the route name to the Dev URL (copy url from Networking tool within Replit)
+To communicate with DB server: In browser, append route name to the Port forwared address
+(ctrl + click link in Codespace Port tab)
 OR 
-In the browser address bar, type in http:// followed by your IP address (or localhost), then a colon and the port #, followed by the route name
-For e.g., http://localhost:8500/route_name
+In the browser address bar, type in http:// followed by your IP address, then a colon and the port #, followed by the route name
+For e.g., http://192.168.0.100:8500/route_name
 */
 class Main {
 

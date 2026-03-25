@@ -24,7 +24,7 @@ public class Main {
   void init() throws IOException {
    
     // Create a port - this is our Gateway
-    int port = 8500;
+    int port = 8501;
 
     // Create the HTTPserver object
     HttpServer server = HttpServer.create(new InetSocketAddress(port),0);

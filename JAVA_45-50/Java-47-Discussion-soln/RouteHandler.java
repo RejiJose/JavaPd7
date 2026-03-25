@@ -96,6 +96,7 @@ public class RouteHandler implements HttpHandler {
 	}
 	public static void send(String response, HttpExchange exchange) throws IOException{
 		exchange.getResponseHeaders().add("Access-Control-Allow-Origin","*");
+    //exchange.getResponseHeaders().set("Content-Type", "text/html");
     System.out.println(response.length());
     System.out.println(response.getBytes());
     System.out.println(response.getBytes().length);
