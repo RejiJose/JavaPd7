@@ -24,13 +24,13 @@ public class Main {
 
   void init() throws IOException {
    
-    // Create a port - this is our Gateway
+    // 1.Create a port - this is our Gateway
     int port = 8500;
 
-    // Create the HTTPserver object
+    // 2.Create the HTTP Server object
     HttpServer server = HttpServer.create(new InetSocketAddress(port),0);
 
-    // Start the server      
+    // 3. Start the server      
     server.start();
     System.out.println("Server is listening on port " + port); 
       
