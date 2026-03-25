@@ -7,7 +7,8 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.Map;
 /*
-In order to communicate with the HTTP Webserver from a browser tab, you will need to append the route name to the Dev URL (copy url from Networking Tool within Replit) 
+To communicate with DB server: In browser, append route name to the Port forwarded address
+(ctrl + click link in Codespace Port tab)
 OR 
 In the browser address bar, type in http:// followed by your IP address, then a colon and the port #, followed by the route name
 For e.g., http://192.168.0.100:8500/route_name
@@ -24,7 +25,7 @@ public class Main {
   void init() throws IOException {
    
     // Create a port - this is our Gateway
-    int port = 8500;
+    int port = 8000;
       
     // Create the HTTPserver object
     HttpServer server = HttpServer.create(new InetSocketAddress(port),0);

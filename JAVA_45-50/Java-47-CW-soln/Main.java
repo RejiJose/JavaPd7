@@ -12,7 +12,7 @@ import java.util.Map;
 // To execute(run) in Windows use:  java -cp sqlite-jdbc-3.23.1.jar: Main
 
 /*
-To communicate with DB server: In browser, append route name to the Port forwared address
+To communicate with DB server: In browser, append route name to the Port forwarded address
 (ctrl + click link in Codespace Port tab)
 OR 
 In the browser address bar, type in http:// followed by your IP address, then a colon and the port #, followed by the route name
