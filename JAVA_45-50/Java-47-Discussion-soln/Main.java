@@ -30,7 +30,7 @@ class Main {
   void init() throws IOException{   
 
     // Create a port - this is your Gateway
-    int port = 8502;
+    int port = 8500;
 
     // Create the HTTPserver object
     HttpServer server = HttpServer.create(new InetSocketAddress(port),0);
@@ -59,5 +59,3 @@ class Main {
       
   }    
 }
-
-
