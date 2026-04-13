@@ -1,4 +1,4 @@
-let data, info; // global variable
+let data, info; // global variables
 
 async function init(){
   // JSON data retrieval process  
