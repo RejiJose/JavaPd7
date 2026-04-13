@@ -3,8 +3,7 @@ let data, info; // global variables
 async function init(){
   // JSON data retrieval process  
   let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; 
-  // The URL above must be running in a separate broswer tab.
-  // (Alternateively, use http://localhost:8500 as link address)
+  // The URL above must be running in a separate broswer tab. (Alternate use: http://localhost:8500 )
   let route= "/customers";
 
   info = await fetch(link+route);
