@@ -5,7 +5,9 @@ async function init(){
   let route= "";
 
   /*
-  For the problems below, use the DB server you created for activity 47 and start it. If you did not complete the first 2 problems of activity 47, then use the database server link given in Lesson 48-Discussion solution (this lesson).
+  For the problems below, use the DB server you created for Activity 47 and start it. If you did not complete the first 2 problems of activity 47, then use the database server link given in Lesson 48-Discussion solution (today's lesson).
+  Make sure the link (forwarded Address from the "Port" tab in Codespaces) has been made PUBLIC.
+  Install the "Live Server" extension. Right click your index.html file and choose 'Open with Live Server' to view the web page.
   */
   
   // Problem 1: Add the link to your database server and the route above.
@@ -17,7 +19,5 @@ async function init(){
   // Problem 3: For each employee, display their first name, last name and birthdate to the console.
 
   
-  
-
 
 }
