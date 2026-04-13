@@ -43,12 +43,12 @@ class Main {
 
     /* GOAL: To create a webpage that will display a card for each track(song) in the 'tracks' table from the Chinook database. (See picture "chinookDBdiagram.JPG").
 
-    PART 1: Build a database server with the route you will need to serve the required information from the DB. Test your route to make sure that it is working correctly. NOTE: Limit your SQL queries to 100 records.
+    PART 1: Build a database server with the route you will need to serve the required information from the DB. Test your route to make sure that it is working correctly.
 
-    For Part 2, see the Activity50_Website Replit
+    For Part 2, see "Activity50-Website".
     */
 
-    // Add your code here.....
+    // Add your code here.....see Problem.txt file for tasks
 
 
 

@@ -45,10 +45,10 @@ class Main {
 
     PART 1: Build a database server with the route you will need to serve the required information from the DB. Test your route to make sure that it is working correctly.
 
-    For Part 2, see the Activity50_Website Replit
+    For Part 2, see "Activity50-Website".
     */
 
-    // Add your code here.....
+    // Add your code here..... see Problem.txt file for tasks
     String sql = "";    
   
     sql  = " SELECT tracks.Name, tracks.Composer, albums.Title FROM tracks ";

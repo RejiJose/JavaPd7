@@ -1,23 +1,23 @@
-/* GOAL: To create a webpage that will display a card for each track(song) in the 'tracks' table from the Chinook database. (See picture "WebPagePicture.PNG").
-
-For Part 1, see the Activity50_DBserver Replit
+/* Goal for PART 2: Create a webpage that will display a card for each track(song) in the 'tracks' table from the Chinook database. (See picture "WebPagePicture.PNG").
+For Part 1, see "Activity50_DBserver".
 */
-let data,songs;
+let songs;
 
-function init(){
-  $.ajaxSetup({async: false});
-
-  // PART 2: Create the webpage. 
-  // Get data from DB server and store in variable.  
-  let link = "http://localhost:8500";
+async function init(){
+  // JSON data retrieval process  
+  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; 
+  // The URL above must be running in a separate broswer tab. (Alternate use: http://localhost:8500 )
   let route= "/songs";
-  songs = $.getJSON(link+route).responseJSON;
-  
+
+  info = await fetch(link+route);
+  songs = await info.json();
+  console.log(songs); // confirm data retrieval
+
   // Invoke(call) function that creates the cards.
   generateCards(songs);
 }
 
-// Write a function that accepts an array of JSON that contains song information, generates an info card for each track(song) and displays them on the webpage. (see "WebPagePicture.PNG" to determine the types of HTML elements to use).
+// Write a function that accepts an array of JSON that contains song information, generates an info card for each track(song) with song name, album title and composer. Display the cards on a webpage. (see "WebPagePicture.PNG" to determine the types of HTML elements to use).
 function generateCards(songs){
   
   let output = document.getElementById("output");

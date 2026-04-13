@@ -10,7 +10,7 @@ async function init(){
   data = await info.json();
 
   let cust_array = data;
-  console.log(customers); // confirm data retrieval
+  console.log(cust_array); // confirm data retrieval
 
   generateCards(cust_array);
 }
