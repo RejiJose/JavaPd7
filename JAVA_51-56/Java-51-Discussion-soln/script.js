@@ -1,14 +1,16 @@
 // Your DB Server that serves the 'customers' route must be running!!  (Lesson51 DBserver)
 let customers, cardCount, output; //global variables
 
-function init(){
+async function init(){
   $.ajaxSetup({async: false});
   cardCount = document.getElementById("cardCount");
   output = document.getElementById("output");
   
-  let link = "http://localhost:8500"; //replace with your Dev URL
+  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; //replace with your Dev URL
   let route= "/customers";
-  customers = $.getJSON(link+route).responseJSON;
+
+  info = await fetch(link+route);
+  customers = await info.json();
 
   generateCards(customers);
 }

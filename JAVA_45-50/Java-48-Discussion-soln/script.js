@@ -12,15 +12,15 @@ async function init(){
   let customers = data;
 
   //First display the entire array to the console and examine the content
-  console.log(customers);
+  //console.log(customers);
 
   // Traverse the array of JSON and print customer JSON object; then display the customerID, first and last name.
-  // for(let i=0; i<customers.length; i++){
-  //   let customer = customers[i];    
-  //   // console.log(customer.CustomerId);
-  //   console.log("First name: " + customer.FirstName);
-  //   console.log("Last name:  " + customer.LastName);
-  //   console.log("*********************");
-  // }
+  for(let i=0; i<customers.length; i++){
+    let customer = customers[i];    
+    //console.log(customer.CustomerId);
+    console.log("First name: " + customer.FirstName);
+    console.log("Last name:  " + customer.LastName);
+    console.log("*********************");
+  }
 
 }
