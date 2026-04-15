@@ -2,12 +2,9 @@
 // Your DB Server that serves the 'songs' route must be running!! (Lesson51 DBserver)
 
 // See index.html file first.
-let songs, output, cardCount;
+let songs, info, output, cardCount;
 
 async function init(){
-  output = document.getElementById("output");
-  cardCount = document.getElementById("cardCount");
-  
   let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; //replace with your Dev URL
   let route= "/songs";
 
@@ -17,14 +14,18 @@ async function init(){
   generateCards(songs);
 }
 
-function generateCards(songs){  
-  let build ="";
-  let count = 0;
+function generateCards(songs){
+  output = document.getElementById("output");
+  cardCount = document.getElementById("cardCount");
+  let build = "";
+  let count = "";
+
   //Update number of songs found
   cardCount.innerHTML=`Number of songs found: ${songs.length}`;
   
   for(let i=0; i<songs.length; i++){
     let song = songs[i];
+    
     build += `<div class="card" >`
     build += 	`<h4> ${song.Name} </h4>`;
     build += 	`<div> Album </div>`;
@@ -32,6 +33,7 @@ function generateCards(songs){
     build += 	`<div> Composer </div>`;
     build += 	`<span> ${song.Composer}</span>`;
     build += `</div>`;
+
     count++;
   }
   cardCount.innerHTML = `<h2>${count} track(s) found</h2>`;
