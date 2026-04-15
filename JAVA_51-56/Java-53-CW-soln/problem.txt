@@ -1,7 +1,0 @@
-Problem:
-
-Create a webpage layout using the wireframe picture. 
-
-Follow the picture to create all the section labeled in the picture file.  You can use you own personal colors, but they should all be different colors to differentiate the different sections of the webpage.
-
-Keep the nav bar fixed at 200px;

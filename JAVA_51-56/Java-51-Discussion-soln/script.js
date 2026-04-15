@@ -2,7 +2,6 @@
 let customers, cardCount, output; //global variables
 
 async function init(){
-  $.ajaxSetup({async: false});
   cardCount = document.getElementById("cardCount");
   output = document.getElementById("output");
   
