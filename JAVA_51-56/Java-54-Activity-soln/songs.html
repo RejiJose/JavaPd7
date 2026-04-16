@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>repl.it</title>
+    <title>54-Actvy Soln: Songs</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- import the script.js file -->
-    <!-- We need to import JQUERY Library to make the api call-->
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- import JS file -->
     <script src="songs.js"></script>
-
   </head>
   
   <!-- Call the int function when website loads -->
   <body onload="init()">
     <div>
+
       <!--  Header or Banner -->
       <div id="header">
         <h1> Lesson 54 - Chinook Customers </h1>
       </div>
+
       <!--  nav bar -->
       <nav id='nav'>
         <h2>Navigation - Song Page</h2>
@@ -28,12 +25,13 @@
             <a href="songs.html" class="button">SONGS</a>
       </nav>
       
+      <!--  Main content (has 3 panels) -->
       <div class="container">
         
         <div class='panel'>
           <div class="container filter">
             <div>          
-                   Left Panel
+              Left Panel
               <h4> Search by song name </h4>
               <input style="flex:2;text-align:right;" type="text" 
                 id="songname" placeholder="Enter song name" >        
@@ -52,7 +50,8 @@
         </div>
         
       </div>
-
+      
+      <!--  Footer -->
       <div id='foot'>
         <h3> Footer </h3>
       </div>

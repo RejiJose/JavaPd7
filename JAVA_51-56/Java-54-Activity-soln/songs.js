@@ -1,12 +1,11 @@
+let songs, info;
 
-let songs;
-function init(){
-  $.ajaxSetup({async: false});
-  
-  // Ensure Lesson_51_DBserver replit is running!
-  let link = "http://localhost:8500";//replace with your Dev URL
+async function init(){
+  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; //replace with your Dev URL
   let route= "/songs";
-  songs = $.getJSON(link+route).responseJSON;
+
+  info = await fetch(link+route);
+  songs = await info.json();
 
   generateCards(songs);
 }

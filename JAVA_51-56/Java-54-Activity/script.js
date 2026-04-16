@@ -1,7 +1,6 @@
-let data,customers;
+let customers, info;
 
-function init(){
-  $.ajaxSetup({async: false});
+async function init(){
   
  
 

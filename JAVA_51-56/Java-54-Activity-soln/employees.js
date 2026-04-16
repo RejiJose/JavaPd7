@@ -1,13 +1,13 @@
-let employees;
-function init(){
-  $.ajaxSetup({async: false});
-  
-  // Ensure Lesson_51_DBserver replit is running!
-  let link = "http://localhost:8500";//replace with your Dev URL
-  let route= "/employees";
-  employees = $.getJSON(link+route).responseJSON;
+let employees, info;
 
-  generateCards(employees);  
+async function init(){
+  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; //replace with your Dev URL
+  let route= "/employees";
+
+  info = await fetch(link+route);
+  employees = await info.json();
+
+  generateCards(employees);
 }
 
 function generateCards(employees){  
