@@ -2,7 +2,7 @@
 Problem 2:  For each employee, create a Modal card where the text of the card has the employee id, first and last name. As the Modal content, include the city and the flag of the city.
 */
 
-// Ensure Lesson_51_DBserver replit is running!
+// Ensure Lesson_51_DBserver replit is running and is Public!
 let employees, info;
 
 async function init(){

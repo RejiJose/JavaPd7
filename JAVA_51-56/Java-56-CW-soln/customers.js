@@ -3,7 +3,7 @@ Problem 1:  For each customer, create a Flip card where the front has the custom
 HINT: You will need to rewrite the generateCards() function.
 */
 
-// Ensure Lesson_51_DBserver replit is running!
+// Ensure Lesson_51_DBserver replit is running and is Public!
 let customers, info;
 
 async function init(){
@@ -12,6 +12,7 @@ async function init(){
 
   info = await fetch(link+route);
   customers = await info.json();
+  console.log(customers);
 
   generateCards(customers);
 }
