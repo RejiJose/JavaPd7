@@ -6,18 +6,16 @@
   
   {name:"IRONMAN",img:"ironman.png",description:"Iron Man is a superhero appearing in American comic books published by Marvel Comics."},
   
-  {name:"BLACK PANTHER",img:"blackpanther.jpg",description:"T'Challa is the king of Wakanda, the secretive and highly advanced African nation, as well as the powerful warrior known as the Black Panther."},
+  {name:"BLACK PANTHER",img:"blackpanther.jpg",description:"T'Challa is the king of Wakanda, a secretive African nation with its powerful warrior Black Panther."},
   ]
-
 
 /*
 Problem:
-Use the array of Hero information (JSON) called 'data' above, which includes the name, image file name and description, to build a flip card for each hero.
-
-Have the front of the card display the image of the hero and the back of the card display the name as a header with a description below it.
-
-Add the card to the container "flipcard_output"
+1. Use the array of Hero data (JSON format) called 'data' above, which includes the name, image file name and description, to build a flip card for each hero.
+2. Have the front of the card display the image of the hero and the back of the card display the name as a header with a description below it.
+3. Add the card to the container "flipcard_output".
 */
+
 window.onload = function(){
   let back = "";
   let front = "";

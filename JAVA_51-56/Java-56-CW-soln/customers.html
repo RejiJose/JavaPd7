@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>repl.it</title>
-    <!-- import the .css file(s) -->
+    <title>56-CW soln: Customers</title>
+    <!-- import CSS file(s) -->
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="components.css" rel="stylesheet" type="text/css" />    
-    <!-- Import jQuery library to make the API call-->    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- import the .js file(s) -->
+    <link href="components.css" rel="stylesheet" type="text/css" />
+    <!-- import JS file(s) -->
     <script src="components.js"></script>
-    <script src="script.js"></script>
+    <script src="customers.js"></script>
   </head>
   
   <!-- Call the int function when website loads -->
@@ -19,13 +17,13 @@
       <div id="header">
         <h1> Lesson 56 Classwork </h1>
       </div>
+
       <!--  nav bar -->
       <nav id='nav'>
         <h2>Navigation - Customer Page</h2>
             <a href="index.html" class="button">HOME</a>   
             <a href="customers.html" class="button">CUSTOMERS</a> 
             <a href="employees.html" class="button">EMPLOYEES</a>
-
       </nav>
       
       <div class="container">
@@ -35,8 +33,7 @@
             <div>
           
                    Left Panel
-              <h4> Search for customer by country
-              </h4>
+              <h4> Search for customer by country</h4>
               <input style="flex:2;text-align:right;" type="text" 
                 id="country" placeholder="Enter country" >        
               <a class="button" onclick="filter()"> Search </a><br>

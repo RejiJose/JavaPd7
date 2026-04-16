@@ -3,13 +3,14 @@ Problem 2:  For each employee, create a Modal card where the text of the card ha
 */
 
 // Ensure Lesson_51_DBserver replit is running!
-let employees;
-function init(){
-  $.ajaxSetup({async: false});
-  
-  let link = "http://localhost:8500";//replace with your Dev URL
+let employees, info;
+
+async function init(){
+  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; //replace with your Dev URL
   let route= "/employees";
-  employees = $.getJSON(link+route).responseJSON;
+
+  info = await fetch(link+route);
+  employees = await info.json();
 
   generateCards(employees);
 }

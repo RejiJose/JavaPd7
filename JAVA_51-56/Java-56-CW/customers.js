@@ -4,44 +4,43 @@ HINT: You will need to rewrite the generateCards() function.
 */
 
 // Ensure Lesson_51_DBserver replit is running!
-let customers;
-function init(){
-  $.ajaxSetup({async: false});
-  
-  let link = "http://localhost:8500";//replace with your Dev URL
-  let route= "/customers";
-  customers = $.getJSON(link+route).responseJSON;
+let customers, info;
 
-  generateCards(customers);  
+async function init(){
+  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; //replace with your Dev URL
+  let route= "/customers";
+
+  info = await fetch(link+route);
+  customers = await info.json();
+
+  generateCards(customers);
 }
 
 function generateCards(customers){
   // Display info as Flip Cards
   let centerpanel = document.getElementById("centerpanel");
   centerpanel.innerHTML = ""; //clear out the container
-  
+
   // initialize strings for front and back HTML content
   let front ="";
   let back ="";
 
   for(let i=0; i<customers.length; i++){
-    let customer = customers[i]
+    let customer = customers[i];
+    
     // create HTML for Flip card front
     front  = `<div class="card" >`;
-    front +=   `<h3> Customer ID : ${customer.CustomerId}</h3>`;
-    front +=   `<div> First Name : ${customer.FirstName}</div>`;
-    front +=   `<div> Last Name : ${customer.LastName}</div>`;
-    front +=   `<p> Email : ${customer.Email}</p>`;
-    front += `</div>`;    
+      // add code here
+    front += `</div>`;
+    
     // create HTML for Flip card back
     back  = `<div class="card" >`;
-    back +=   `<div> Country : ${customer.Country}</div>`;
-    back +=   `<img src='countries/${customer.Country}.PNG'>`;
-    back +=   `<hr>`;
+      // add code here
     back += `</div>`;
+    
     // create Flip card object while passing front & back content
-    let card = new FlipCard(front,back);
-    card.render("centerpanel");// render Flip card in container
+    
+    // render Flip card in container
   }
 }
 
@@ -49,17 +48,16 @@ function filter(){
   let country = document.getElementById("country").value;
   console.log(country);
 
-  let customerList = []; //create a list to add customers to
-  
+  let customerList = []; //create a list of customer info
+
   for(let i=0; i<customers.length;i++){
-    let customer = customers[i] //get each customer
+    let customer = customers[i]; //get each customer's info
     
     if( customer.Country == country ) {
-          //add to the list
-          customerList.push(customer);
+          //add to the new list
+      customerList.push(customer);
     }
   }
-  
   console.log(`number found ${customerList.length}`)
   generateCards(customerList);  
 }
