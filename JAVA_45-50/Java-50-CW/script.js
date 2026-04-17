@@ -11,11 +11,18 @@ async function init(){
 
   console.log(employees); // confirm data retrieval
 
-  let output = ""
+  // call the function (from Problem 1) to generate the cards
+  generateCards(employees);
+}
+
+// Problem 1: Create a function that builds a card for each employee using the div with a class of 'card'.
+// Each card should contain the employee ID, first name, last name, and title.
+// Make the main output div with id of 'output' be a flex container using CSS. 
+function generateCards(employees){
+
+  let output = "";
   let build = "";
 
-  // Problem 1: Create a function that builds a card for each employee using the div with an id of 'output'. 
-  // Make it a flex container using CSS. Each card should contain the employee ID, first name, last name, and title.
 
 
   // Problem 2: Add CSS Styling to style the info cards.
