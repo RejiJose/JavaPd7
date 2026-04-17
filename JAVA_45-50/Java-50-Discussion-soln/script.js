@@ -1,4 +1,4 @@
-let data, info;
+let cust_array, info;
 
 async function init(){
   // JSON data retrieval process  
@@ -7,9 +7,8 @@ async function init(){
   let route= "/customers";
 
   info = await fetch(link+route);
-  data = await info.json();
+  cust_array = await info.json();
 
-  let cust_array = data;
   console.log(cust_array); // confirm data retrieval
 
   generateCards(cust_array);
@@ -23,10 +22,9 @@ function generateCards(customers){
   for(let i=0; i<customers.length; i++){
     let customer = customers[i];
     build += `<div class="card" >`
-    build +=   `<h3> Customer ID: ${customer.CustomerId}</h3>`;
+    build +=   `<h4> Customer ID: ${customer.CustomerId}</h4>`;
     build +=   `<hr>`;
-    build +=   `<p> First Name: ${customer.FirstName}</p>`;
-    build +=   `<div> Last Name: ${customer.LastName}</div>`;
+    build +=   `<p> ${customer.LastName}, ${customer.FirstName}</p>`;
     build +=   `<h5> Tel: ${customer.Phone}</h5>`;    
     build += `</div>`;
   }
