@@ -20,19 +20,19 @@ function generateCards(customers){
   let count = 0;
   for(let i=0; i<customers.length; i++){
     let customer = customers[i];
-    build += `<div class="card" >`
-    build +=   `<h3> Customer ID: ${customer.CustomerId}</h3>`;
-    build +=   `<h4> ${customer.FirstName} ${customer.LastName}</h4>`;
-    build +=   `<h5> ${customer.Phone}<br>`;
-    build +=   `${customer.Email}</h5>`;
-    build +=   `<hr>`;
-    build +=   `<h5>${customer.City}, ${customer.Country}</h5>`;
-    build += `</div>`;
+    build += `<div class="card">
+                  <h3> Customer ID: ${customer.CustomerId}</h3>
+                  <h4> ${customer.FirstName} ${customer.LastName}</h4>
+                  <h5> ${customer.Phone}<br>
+                  ${customer.Email}</h5>
+                  <hr>
+                  <h5>${customer.City}, ${customer.Country}</h5>
+              </div>`;
     count++;
   }
   cardCount.innerHTML = `<h2>${count} customer(s) found</h2>`;
   
-  // Now inject the build content into the output container
+  // Inject the build content into the output container
   output.innerHTML = build;
 }
 

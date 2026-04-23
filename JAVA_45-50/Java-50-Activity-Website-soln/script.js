@@ -25,15 +25,15 @@ function generateCards(songs){
   
   for(let i=0; i<songs.length; i++){
     let song = songs[i];
-    build += `<div class="card" >`;
-    build += `<h3> Song Name </h3>`;
-    build += `<p> ${song.Name}</p>`;
-    build += `<div> Album </div>`;
-    build += `<h2> ${song.Title} </h2>`;
-    build += `<div> Composer </div>`;
-    build += `<h2> ${song.Composer}</h2>`;
-    build += `<hr>`;
-    build += `</div>`;
+    build += `<div class="card" >
+                  <h3> Song Name </h3>
+                  <p> ${song.Name}</p>
+                  <div> Album </div>
+                  <h2> ${song.Title} </h2>
+                  <div> Composer </div>
+                  <h2> ${song.Composer}</h2>
+                  <hr>
+              </div>`;
   }
   // Inject the build content into the output container
   output.innerHTML = build;
